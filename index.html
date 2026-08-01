@@ -1,0 +1,1652 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#a60012">
+  <meta name="description" content="从资水出发，与九位新同事并肩。中国银行益阳分行2026届新员工迎新互动图文。">
+  <title>青益起航｜中国银行益阳分行迎新</title>
+  <style>:root {
+  --ink: #131313;
+  --paper: #f7f3ea;
+  --white: #fffefb;
+  --red: #a60012;
+  --red-bright: #df1027;
+  --blue: #1b6f9f;
+  --cyan: #a8ddea;
+  --gold: #f5c945;
+  --green: #3b946f;
+  --muted: #6b6b65;
+  --line: rgba(19, 19, 19, 0.16);
+  --max: 720px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #e7e4df;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.95), transparent 32rem),
+    #e7e4df;
+  font-family:
+    "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", "Source Han Sans SC",
+    Arial, sans-serif;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+img,
+svg {
+  display: block;
+}
+
+main {
+  position: relative;
+  width: min(100%, var(--max));
+  margin: 0 auto;
+  overflow: hidden;
+  background: var(--paper);
+  box-shadow: 0 0 64px rgba(31, 28, 24, 0.16);
+}
+
+.chapter-rail {
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: calc(50% + 390px);
+  display: grid;
+  gap: 10px;
+  transform: translateY(-50%);
+}
+
+.chapter-rail__caption {
+  margin-bottom: 4px;
+  color: #817b73;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  writing-mode: vertical-rl;
+}
+
+.chapter-rail button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 88px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #938d84;
+  cursor: pointer;
+  text-align: left;
+}
+
+.chapter-rail button i {
+  display: grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border: 1px solid rgba(19, 19, 19, 0.18);
+  border-radius: 50%;
+  font-size: 8px;
+  font-style: normal;
+  transition: 180ms ease;
+}
+
+.chapter-rail button span {
+  max-width: 0;
+  overflow: hidden;
+  font-size: 10px;
+  font-weight: 700;
+  opacity: 0;
+  white-space: nowrap;
+  transition: 180ms ease;
+}
+
+.chapter-rail button:hover span,
+.chapter-rail button.is-active span {
+  max-width: 70px;
+  opacity: 1;
+}
+
+.chapter-rail button.is-active {
+  color: var(--red);
+}
+
+.chapter-rail button.is-active i {
+  border-color: var(--red);
+  background: var(--red);
+  color: white;
+}
+
+.hero {
+  position: relative;
+  min-height: min(970px, 100svh);
+  color: white;
+  background: #15384a;
+}
+
+.hero__topline {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 28px;
+}
+
+.bank-wordmark {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.bank-wordmark__seal {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  border-radius: 50%;
+  color: white;
+  font-family: serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.bank-wordmark strong,
+.bank-wordmark small {
+  display: block;
+}
+
+.bank-wordmark strong {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+.bank-wordmark small {
+  margin-top: 3px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 7px;
+  letter-spacing: 0.12em;
+}
+
+.draft-pill {
+  padding: 7px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.16);
+  backdrop-filter: blur(8px);
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.hero__art,
+.hero__shade {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__art {
+  object-fit: cover;
+  object-position: 53% center;
+}
+
+.hero__shade {
+  background:
+    linear-gradient(180deg, rgba(10, 26, 35, 0.62) 0%, rgba(6, 19, 26, 0.03) 32%),
+    linear-gradient(0deg, rgba(5, 24, 33, 0.88) 0%, rgba(8, 31, 42, 0.1) 58%);
+}
+
+.hero__copy {
+  position: absolute;
+  z-index: 3;
+  right: 28px;
+  bottom: 70px;
+  left: 28px;
+}
+
+.hero__eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 18px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.hero__eyebrow i {
+  width: 34px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.hero__kicker {
+  display: inline-flex;
+  margin: 0 0 10px;
+  padding: 5px 8px;
+  transform: rotate(-1.5deg);
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(48px, 10vw, 76px);
+  font-weight: 950;
+  letter-spacing: -0.07em;
+  line-height: 0.98;
+  text-shadow: 0 3px 22px rgba(0, 0, 0, 0.2);
+}
+
+.hero h1 span {
+  display: block;
+  margin-bottom: 6px;
+  color: white;
+  font-size: 0.52em;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.hero__subtitle {
+  margin: 18px 0 22px;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.hero__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--red-bright);
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 0 12px 28px rgba(150, 0, 15, 0.28);
+}
+
+.hero__cta svg,
+.person-card__action svg {
+  width: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.hero__sticker {
+  position: absolute;
+  z-index: 4;
+}
+
+.hero__sticker--star {
+  top: 26%;
+  right: 18px;
+  transform: rotate(13deg);
+}
+
+.star-icon {
+  width: 42px;
+  fill: var(--gold);
+  filter: drop-shadow(0 3px 0 rgba(19, 19, 19, 0.22));
+}
+
+.star-icon--small {
+  width: 24px;
+}
+
+.hero__sticker--tag {
+  top: 38%;
+  left: 18px;
+  padding: 5px 8px;
+  transform: rotate(-8deg);
+  border: 2px solid var(--ink);
+  background: white;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 950;
+  box-shadow: 3px 3px 0 var(--ink);
+}
+
+.hero__scroll-tip {
+  position: absolute;
+  z-index: 3;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  writing-mode: vertical-rl;
+}
+
+.hero__scroll-tip i {
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(white, transparent);
+  animation: scrollPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollPulse {
+  0%,
+  100% {
+    transform: scaleY(0.45);
+    transform-origin: top;
+    opacity: 0.4;
+  }
+  50% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
+}
+
+.section {
+  position: relative;
+  padding: 78px 28px;
+  scroll-margin-top: 20px;
+}
+
+.section-kicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 34px;
+}
+
+.section-kicker span {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.section-kicker p {
+  margin: 0;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.17em;
+}
+
+.section-kicker--light span {
+  background: white;
+  color: var(--ink);
+}
+
+.section-kicker--light p {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.letter {
+  background:
+    radial-gradient(circle at 90% 5%, rgba(245, 201, 69, 0.34), transparent 16rem),
+    linear-gradient(90deg, rgba(19, 19, 19, 0.035) 1px, transparent 1px),
+    var(--paper);
+  background-size: auto, 36px 100%, auto;
+}
+
+.letter::after {
+  position: absolute;
+  top: 104px;
+  right: -64px;
+  width: 180px;
+  height: 28px;
+  transform: rotate(22deg);
+  background: var(--red-bright);
+  content: "";
+  opacity: 0.9;
+}
+
+.letter__headline > p {
+  margin: 0 0 14px;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 17px;
+}
+
+.letter__headline h2,
+.faces__header h2,
+.youth__title h2,
+.timeline__title h2 {
+  margin: 0;
+  font-size: clamp(38px, 8vw, 60px);
+  font-weight: 950;
+  letter-spacing: -0.06em;
+  line-height: 1.08;
+}
+
+.letter__headline h2 span,
+.faces__header h2 span,
+.youth__title h2 span,
+.timeline__title h2 span {
+  position: relative;
+  z-index: 1;
+  color: var(--red);
+}
+
+.letter__headline h2 span::after,
+.youth__title h2 span::after,
+.timeline__title h2 span::after {
+  position: absolute;
+  z-index: -1;
+  right: -4px;
+  bottom: 4px;
+  left: -4px;
+  height: 10px;
+  transform: rotate(-2deg);
+  background: var(--gold);
+  content: "";
+  opacity: 0.82;
+}
+
+.letter__body {
+  margin-top: 38px;
+  padding-left: 20px;
+  border-left: 3px solid var(--red);
+}
+
+.letter__body p {
+  margin: 0 0 18px;
+  color: #383733;
+  font-size: 15px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.letter__manifesto {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 36px;
+}
+
+.letter__manifesto div {
+  min-height: 126px;
+  padding: 15px 12px;
+  border: 1px solid var(--ink);
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.letter__manifesto div:nth-child(2) {
+  transform: translateY(12px);
+  background: var(--gold);
+}
+
+.letter__manifesto span,
+.letter__manifesto strong {
+  display: block;
+}
+
+.letter__manifesto span {
+  margin-bottom: 22px;
+  color: var(--red);
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 23px;
+}
+
+.letter__manifesto strong {
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.local-note {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 15px;
+  align-items: center;
+  margin-top: 58px;
+  padding: 20px;
+  border-radius: 0 26px 0 26px;
+  background: #dff1f3;
+  box-shadow: 8px 8px 0 var(--ink);
+}
+
+.local-note__pin {
+  display: grid;
+  width: 46px;
+  height: 54px;
+  place-items: center;
+  border-radius: 24px 24px 24px 3px;
+  background: var(--blue);
+  color: white;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.local-note small {
+  color: var(--blue);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+}
+
+.local-note h3 {
+  margin: 5px 0 7px;
+  font-size: 19px;
+}
+
+.local-note p {
+  margin: 0;
+  color: #445257;
+  font-size: 11px;
+  line-height: 1.75;
+}
+
+.section--ink {
+  color: white;
+  background:
+    radial-gradient(circle at 20% 12%, rgba(75, 149, 181, 0.35), transparent 20rem),
+    var(--ink);
+}
+
+.section--ink::before {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 10px 10px;
+  content: "";
+  pointer-events: none;
+}
+
+.faces__header {
+  position: relative;
+  z-index: 1;
+}
+
+.faces__header h2 span {
+  color: var(--gold);
+}
+
+.faces__header > p {
+  max-width: 420px;
+  margin: 20px 0 0;
+  color: rgba(255, 255, 255, 0.67);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.sample-notice {
+  display: inline-flex;
+  margin-top: 20px;
+  padding: 8px 11px;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 9px;
+  line-height: 1.55;
+}
+
+.person-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.person-card {
+  display: grid;
+  grid-template-columns: 44% 56%;
+  width: 100%;
+  min-height: 330px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 22px;
+  background: var(--white);
+  color: var(--ink);
+  cursor: pointer;
+  text-align: left;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.person-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.26);
+}
+
+.person-card:nth-child(even) {
+  grid-template-columns: 56% 44%;
+}
+
+.person-card:nth-child(even) .person-card__visual {
+  order: 2;
+}
+
+.person-card__visual {
+  position: relative;
+  min-width: 0;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.person-card__image,
+.portrait-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 330px;
+}
+
+.person-card__image {
+  object-fit: cover;
+  object-position: center 28%;
+}
+
+.portrait-placeholder {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 9px;
+  background:
+    linear-gradient(135deg, transparent 40%, rgba(255, 255, 255, 0.35) 40% 44%, transparent 44%),
+    var(--gold);
+}
+
+.portrait-placeholder--blue {
+  background-color: var(--cyan);
+}
+
+.portrait-placeholder--green {
+  background-color: #bfe5cf;
+}
+
+.portrait-placeholder--red {
+  background-color: #efb1b7;
+}
+
+.portrait-placeholder span {
+  display: grid;
+  width: 82px;
+  height: 82px;
+  place-items: center;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  font-family: Georgia, serif;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 900;
+  box-shadow: 5px 5px 0 var(--ink);
+}
+
+.portrait-placeholder small {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.person-card__number {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
+  color: white;
+  font-family: Georgia, serif;
+  font-size: 10px;
+  font-style: italic;
+}
+
+.person-card__content {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 21px;
+}
+
+.person-card__content > small {
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.person-card__content h3 {
+  margin: 7px 0 10px;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 32px;
+}
+
+.person-card__intro {
+  display: -webkit-box;
+  overflow: hidden;
+  margin: 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.75;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
+.person-card__content > .person-card__future-label {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: #8d857a;
+  letter-spacing: 0.06em;
+}
+
+.person-card__content blockquote {
+  display: -webkit-box;
+  margin: 6px 0 15px;
+  overflow: hidden;
+  color: var(--red);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.65;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.person-card__action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  font-size: 10px;
+  font-weight: 900;
+}
+
+.person-card--blue .person-card__content blockquote {
+  color: var(--blue);
+}
+
+.person-card--gold .person-card__content blockquote {
+  color: #9b6c00;
+}
+
+.person-card--green .person-card__content blockquote {
+  color: var(--green);
+}
+
+.youth {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+    repeating-linear-gradient(0deg, #e9e2d5 0 1px, transparent 1px 26px),
+    var(--paper);
+}
+
+.youth::before {
+  position: absolute;
+  top: 38px;
+  right: -36px;
+  width: 150px;
+  height: 150px;
+  border: 28px solid rgba(166, 0, 18, 0.08);
+  border-radius: 50%;
+  content: "";
+}
+
+.youth__title > p {
+  margin: 0 0 12px;
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+}
+
+.ribbon-banner {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 16px;
+  align-items: center;
+  margin: 38px 0 24px;
+  padding: 18px;
+  transform: rotate(-1deg);
+  background: var(--red);
+  color: white;
+  box-shadow: 7px 7px 0 var(--ink);
+}
+
+.ribbon-banner__flag {
+  display: grid;
+  width: 52px;
+  height: 42px;
+  place-items: center;
+  background: #d90d22;
+}
+
+.ribbon-banner small,
+.ribbon-banner strong {
+  display: block;
+}
+
+.ribbon-banner small {
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+
+.ribbon-banner strong {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.youth-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.youth-card {
+  padding: 23px 20px;
+  border: 1px solid var(--ink);
+  border-radius: 0 24px 0 24px;
+  background: rgba(255, 254, 251, 0.82);
+}
+
+.youth-card:nth-child(2) {
+  margin-left: 20px;
+  background: #fff2bd;
+}
+
+.youth-card:nth-child(3) {
+  margin-right: 20px;
+  background: #dff1f3;
+}
+
+.youth-card__top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.youth-card__top span {
+  color: var(--red);
+  font-family: Georgia, serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.youth-card__top i {
+  width: 25px;
+  height: 1px;
+  background: var(--ink);
+}
+
+.youth-card__top small {
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.youth-card h3 {
+  margin: 15px 0 8px;
+  font-size: 22px;
+}
+
+.youth-card p {
+  margin: 0;
+  color: #494741;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.youth-pledge {
+  position: relative;
+  margin-top: 42px;
+  padding: 32px 22px 24px;
+  overflow: hidden;
+  border-radius: 28px;
+  background: var(--ink);
+  color: white;
+  text-align: center;
+}
+
+.youth-pledge__spark {
+  position: absolute;
+  top: -8px;
+  right: 16px;
+  transform: rotate(14deg);
+}
+
+.youth-pledge > small {
+  color: var(--gold);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.15em;
+}
+
+.youth-pledge > p {
+  margin: 17px auto 21px;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+.youth-pledge button {
+  padding: 11px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.32);
+  border-radius: 999px;
+  background: white;
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.youth-pledge button.is-saved {
+  background: var(--gold);
+}
+
+.section--mist {
+  background:
+    radial-gradient(circle at 8% 20%, rgba(59, 148, 111, 0.18), transparent 18rem),
+    radial-gradient(circle at 90% 70%, rgba(27, 111, 159, 0.18), transparent 22rem),
+    #edf4f1;
+}
+
+.timeline__title > p {
+  margin: 16px 0 0;
+  color: #50615e;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.milestones {
+  margin-top: 40px;
+}
+
+.milestone {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 15px;
+  min-height: 154px;
+}
+
+.milestone__axis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.milestone__axis span {
+  display: grid;
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid var(--ink);
+  border-radius: 50%;
+  background: var(--white);
+  font-family: Georgia, serif;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.milestone:nth-child(2) .milestone__axis span,
+.milestone:nth-child(4) .milestone__axis span {
+  background: var(--red);
+  color: white;
+}
+
+.milestone__axis i {
+  width: 1px;
+  flex: 1;
+  border-left: 1px dashed rgba(19, 19, 19, 0.35);
+}
+
+.milestone:last-child .milestone__axis i {
+  display: none;
+}
+
+.milestone > div:last-child {
+  padding: 2px 0 30px;
+}
+
+.milestone small {
+  color: var(--red);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+}
+
+.milestone h3 {
+  margin: 7px 0 8px;
+  font-size: 20px;
+}
+
+.milestone p {
+  margin: 0;
+  color: #475451;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.finale {
+  position: relative;
+  padding: 90px 28px 42px;
+  overflow: hidden;
+  background:
+    linear-gradient(160deg, rgba(0, 0, 0, 0.05), transparent 38%),
+    var(--red);
+  color: white;
+}
+
+.finale__rings {
+  position: absolute;
+  top: -110px;
+  right: -130px;
+  width: 360px;
+  height: 360px;
+  border: 50px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 45px rgba(255, 255, 255, 0.05),
+    0 0 0 90px rgba(255, 255, 255, 0.03);
+}
+
+.finale > p {
+  margin: 0 0 12px;
+  color: var(--gold);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.17em;
+}
+
+.finale h2 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-size: clamp(47px, 11vw, 76px);
+  font-weight: 950;
+  letter-spacing: -0.07em;
+  line-height: 1;
+}
+
+.finale h2 span {
+  color: var(--gold);
+}
+
+.finale__copy {
+  margin-top: 38px;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.finale__copy p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.83);
+  font-size: 13px;
+  line-height: 1.95;
+  text-align: justify;
+}
+
+.finale__copy strong {
+  display: block;
+  margin-top: 20px;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 20px;
+}
+
+.finale__signature {
+  display: grid;
+  gap: 8px;
+  margin-top: 34px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.finale__signature span {
+  display: grid;
+  grid-template-columns: 46px minmax(0, 1fr);
+  align-items: baseline;
+}
+
+.finale__signature b {
+  color: var(--gold);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+}
+
+.finale__end {
+  margin-top: 44px;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  font-style: italic;
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+
+.person-modal {
+  position: fixed;
+  z-index: 100;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(10, 10, 10, 0.72);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 160ms ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+.person-modal__panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: 42% 58%;
+  width: min(690px, 100%);
+  max-height: min(800px, 92svh);
+  overflow: hidden;
+  border-radius: 24px;
+  background: var(--white);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
+}
+
+.person-modal__close {
+  position: absolute;
+  z-index: 4;
+  top: 12px;
+  right: 12px;
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(19, 19, 19, 0.86);
+  color: white;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.person-modal__visual {
+  position: relative;
+  min-height: 520px;
+  overflow: hidden;
+  background: var(--gold);
+}
+
+.person-modal__visual .person-card__image,
+.person-modal__visual .portrait-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+}
+
+.person-modal__visual .person-card__image {
+  object-fit: cover;
+  object-position: center 25%;
+}
+
+.person-modal__copy {
+  overflow-y: auto;
+  padding: 34px 31px 31px;
+}
+
+.person-modal__copy > small {
+  color: var(--red);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+}
+
+.person-modal__copy h2 {
+  margin: 7px 0 4px;
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 44px;
+  line-height: 1;
+}
+
+.person-modal__role {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.person-modal__section > small,
+.person-modal__future > small {
+  color: var(--blue);
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.person-modal__future {
+  margin-top: 22px;
+  padding: 18px;
+  border-radius: 0 20px 0 20px;
+  background: #f4efe4;
+  box-shadow: 5px 5px 0 var(--gold);
+}
+
+.person-modal__future blockquote {
+  margin: 10px 0 0;
+  padding: 0;
+  color: var(--red);
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 17px;
+  font-weight: 950;
+  line-height: 1.75;
+}
+
+.person-modal__panel--blue .person-modal__copy > small,
+.person-modal__panel--blue .person-modal__future blockquote {
+  color: var(--blue);
+}
+
+.person-modal__panel--green .person-modal__copy > small,
+.person-modal__panel--green .person-modal__future blockquote {
+  color: var(--green);
+}
+
+.person-modal__intro {
+  margin: 10px 0 0;
+  color: #413f39;
+  font-size: 13px;
+  line-height: 2;
+  text-align: justify;
+}
+
+.person-modal__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 27px;
+}
+
+.person-modal__tags span {
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 9px;
+}
+
+@media (max-width: 980px) {
+  .chapter-rail {
+    display: none;
+  }
+}
+
+@media (max-width: 620px) {
+  main {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .hero {
+    min-height: 100svh;
+  }
+
+  .hero__topline {
+    padding: 18px 18px;
+  }
+
+  .hero__copy {
+    right: 20px;
+    bottom: 62px;
+    left: 20px;
+  }
+
+  .hero__art {
+    object-position: 55% center;
+  }
+
+  .section {
+    padding: 68px 20px;
+  }
+
+  .letter__manifesto {
+    gap: 5px;
+  }
+
+  .letter__manifesto div {
+    min-height: 118px;
+    padding: 13px 9px;
+  }
+
+  .letter__manifesto span {
+    font-size: 20px;
+  }
+
+  .person-card {
+    grid-template-columns: 43% 57%;
+    min-height: 300px;
+  }
+
+  .person-card:nth-child(even) {
+    grid-template-columns: 57% 43%;
+  }
+
+  .person-card__image,
+  .portrait-placeholder {
+    min-height: 300px;
+  }
+
+  .person-card__content {
+    padding: 19px 16px;
+  }
+
+  .person-card__content h3 {
+    font-size: 28px;
+  }
+
+  .person-card__content blockquote {
+    margin: 6px 0 12px;
+    font-size: 11px;
+  }
+
+  .person-modal__panel {
+    display: block;
+    max-height: 92svh;
+    overflow-y: auto;
+  }
+
+  .person-modal__visual {
+    height: 320px;
+    min-height: 320px;
+  }
+
+  .person-modal__visual .person-card__image,
+  .person-modal__visual .portrait-placeholder {
+    min-height: 320px;
+  }
+
+  .person-modal__copy {
+    overflow: visible;
+    padding: 26px 22px 28px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+  [hidden]{display:none!important}.star-text{color:var(--gold);font-size:30px;line-height:1}.hero__cta b,.person-card__action b{font-size:18px;font-weight:500}.person-modal__section{margin-top:4px}
+  </style>
+</head>
+<body>
+<main>
+  <aside class="chapter-rail" aria-label="文章章节导航">
+    <span class="chapter-rail__caption">CHAPTER</span>
+    <button type="button" class="is-active" data-scroll="letter"><i>01</i><span>欢迎信</span></button>
+    <button type="button" data-scroll="faces"><i>02</i><span>新面孔</span></button>
+    <button type="button" data-scroll="youth"><i>03</i><span>团青同行</span></button>
+    <button type="button" data-scroll="first-month"><i>04</i><span>成长地图</span></button>
+  </aside>
+
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__topline">
+      <div class="bank-wordmark"><span class="bank-wordmark__seal" aria-hidden="true">中</span><div><strong>中国银行益阳分行</strong><small>BANK OF CHINA · YIYANG</small></div></div>
+      <span class="draft-pill">九位新力量 · 待终审</span>
+    </div>
+    <img class="hero__art" src="assets/yiyang-hero.webp" alt="青年员工沿资水意象步入益阳城市与新团队的原创插画">
+    <div class="hero__shade" aria-hidden="true"></div>
+    <div class="hero__copy">
+      <div class="hero__eyebrow"><span>2026 NEW POWER</span><i></i><span>青春正当时</span></div>
+      <p class="hero__kicker">从资水出发，与闪亮的你并肩</p>
+      <h1 id="hero-title"><span>青益起航</span>你好，新同事</h1>
+      <p class="hero__subtitle">新生锋芒，益起发光<br>写下属于这一代中行青年的新答案</p>
+      <button type="button" class="hero__cta" data-scroll="letter">开启迎新之旅 <b aria-hidden="true">→</b></button>
+    </div>
+    <div class="hero__sticker hero__sticker--star star-text" aria-hidden="true">★</div>
+    <div class="hero__sticker hero__sticker--tag">YOUNG</div>
+    <div class="hero__scroll-tip" aria-hidden="true"><span>向下滑动</span><i></i></div>
+  </section>
+
+  <section class="letter section" id="letter">
+    <div class="section-kicker"><span>01</span><p>WELCOME LETTER / 欢迎信</p></div>
+    <div class="letter__headline"><p>亲爱的，新同事：</p><h2>这一站，<br>我们在<span>益阳</span>相见。</h2></div>
+    <div class="letter__body">
+      <p>当资水把清晨的第一束光送进城市，你也带着好奇与锋芒，走进中国银行益阳分行的新篇章。</p>
+      <p>这里没有唯一的成长公式。你可以从三尺柜台读懂服务的温度，也可以在数据与产品里寻找创新的答案；可以在一次次请教中扎稳脚步，也可以在团青活动和志愿服务中，找到并肩前行的伙伴。</p>
+      <p>愿你保持热爱，也敬畏专业；敢想敢为，也脚踏实地。今天起，我们一起把个人奋斗的"小坐标"，写进服务地方发展的"大图景"。</p>
+    </div>
+    <div class="letter__manifesto"><div><span>专业</span><strong>把每一件小事做稳</strong></div><div><span>温度</span><strong>把每一次服务做暖</strong></div><div><span>担当</span><strong>把青春写进一线</strong></div></div>
+    <div class="local-note"><div class="local-note__pin">益</div><div><small>YIYANG · HUNAN</small><h3>资水向前，青春向上</h3><p>资水奔流，洞庭浩荡。九位新同事带着不同的热爱与期待相聚益阳，在服务地方发展的新坐标里，并肩写下青春答案。</p></div><span class="star-text" aria-hidden="true">★</span></div>
+  </section>
+
+  <section class="faces section section--ink" id="faces">
+    <div class="faces__header">
+      <div class="section-kicker section-kicker--light"><span>02</span><p>NEW FACES / 新力量名片</p></div>
+      <h2>一群新面孔，<br>正在<span>"益"起发光</span></h2>
+      <p>九种热爱，九份期许。点开每一张名片，认识专业之外更真实、更鲜活的他们。</p>
+      <div class="sample-notice">9 位新员工资料已完整接入 · 照片、自我介绍、未来寄语均来自本人提交材料</div>
+    </div>
+    <div class="person-grid">
+      <button type="button" class="person-card person-card--red" data-person-index="0" aria-label="查看但敬易的完整介绍">
+        <div class="person-card__visual">
+          <img class="person-card__image" src="assets/people/dan-jingyi.webp" alt="但敬易人物照片" style="object-position:50% 30%">
+          <span class="person-card__number">01</span>
+        </div>
+        <div class="person-card__content">
+          <small>益阳新力量 · 01</small>
+          <h3>但敬易</h3>
+          <p class="person-card__intro">大家好，我是但敬易。平时喜欢唱歌，也热爱乒乓球。很期待在接下来的日子里，与各位同事并肩学习、共同进步，一起在中行的舞台上成长、发光！</p>
+          <small class="person-card__future-label">写给一年后的自己</small>
+          <blockquote>"一年后的你，应该已经能更加从容地处理各项业务了吧。愿你继续保持积极的人生态度，认真工作，也好好珍惜身边的人。加油！"</blockquote>
+          <span class="person-card__action">点击了解 <b aria-hidden="true">→</b></span>
+        </div>
+      </button>
+      <button type="button" class="person-card person-card--blue" data-person-index="1" aria-label="查看周瑶的完整介绍">
+        <div class="person-card__visual">
+          <img class="person-card__image" src="assets/people/zhou-yao.webp" alt="周瑶人物照片" style="object-position:50% 20%">
+          <span class="person-card__number">02</span>
+        </div>
+        <div class="person-card__content">
+          <small>益阳新力量 · 02</small>
+          <h3>周瑶</h3>
+          <p class="person-card__intro">大家好，我是周瑶。平时喜欢打羽毛球、听歌和看演唱会。很荣幸能够加入中国银行益阳分行这个大家庭，期待未来与大家共同成长、并肩作战！</p>
+          <small class="person-card__future-label">写给一年后的自己</small>
+          <blockquote>"希望一年后的每个清晨，你穿上工装时仍有仪式感。算得清庞大的流水，也守得住内心的平衡。"</blockquote>
+          <span class="person-card__action">点击了解 <b aria-hidden="true">→</b></span>
+        </div>
+      </button>
+      <button type="button" class="person-card person-card--gold" data-person-index="2" aria-label="查看周筠潮的完整介绍">
+        <div class="person-card__visual">
+          <img class="person-card__image" src="assets/people/zhou-yunchao.webp" alt="周筠潮人物照片" style="object-position:50% 35%">
+          <span class="person-card__number">03</span>
+        </div>
+        <div class="person-card__content">
+          <small>益阳新力量 · 03</small>
+          <h3>周筠潮</h3>
+          <p class="person-card__intro">大家好，我是周筠潮，性格乐观开朗，平时喜欢打球。期待在工作中向各位前辈多多学习，与大家一起交流、共同进步！</p>
+          <small class="person-card__future-label">写给一年后的自己</small>
+          <blockquote>"不必焦虑完美，但求持续进步；守好本心，平安顺遂，万事可期。"</blockquote>
+          <span class="person-card__action">点击了解 <b aria-hidden="true">→</b></span>
+        </div>
+      </button>
+      <button type="button" class="person-card person-card--green" data-person-index="3" aria-label="查看昌诗熠的完整介绍">
+        <div class="person-card__visual">
+          <img class="person-card__image" src="assets/people/chang-shiyi.webp" alt="昌诗熠人物照片" style="object-position:50% 30%">
+          <span class="person-card__number">04</span>
+        </div>
+        <div class="person-card__content">
+          <small>益阳新力量 · 04</small>
+          <h3>昌诗熠</h3>
+          <p class="person-card__intro">大家好，我是昌诗熠。做事稳重有耐心，具备良好的沟通能力与团队协作意识。面对工作，我会认真负责，善于梳理问题、高效完成目标；业余时间也注重持续学习，不断提升自己。</p>
+          <small class="person-card__future-label">写给一年后的自己</small>
+          <blockquote>"希望一年后的自己更加自洽，在工作中也更加从容、得心应手。"</blockquote>
+          <span class="person-card__action">点击了解 <b aria-hidden="true">→</b></span>
+        </div>
+      </button>
+      <button type="button" class="person-card person-card--red" data-person-index="4" aria-label="查看曾子刚的完整介绍">
+        <div class="person-card__visual">
+          <img class="person-card__image" src="assets/people/zeng-zigang.webp" alt="曾子刚人物照片" style="object-position:50% 30%">
+          <span class="person-card__number">05</span>
+        </div>
+        <div class="person-card__content">
+          <small>益阳新力量 · 05</small>
+          <h3>曾子刚</h3>
+          <p class="person-card__intro">大家好，我是曾子刚，毕业于金融学专业，具备扎实的金融理论基础，也熟悉银行业务流程。工作之余，我长期保持运动习惯，尤其热爱竞技体育。我相信，金融市场如同赛场，既需要专业的风控定力，也需要持续拼搏的韧劲，期待与大家携手并进。</p>
+          <small class="person-card__future-label">写给一年后的自己</small>
+          <blockquote>"养天地正气，法古今完人。"</blockquote>
+          <span class="person-card__action">点击了解 <b aria-hidden="true">→</b></span>
+        </div>
+      </button>
+      <button type="button" class="person-card person-card--blue" data-person-index="5" aria-label="查看杨志轩的完整介绍">
+        <div class="person-card__visual">
+          <img class="person-card__image" src="assets/people/yang-zhixuan.webp" alt="杨志轩人物照片" style="object-position:50% 25%">
+          <span class="person-card__number">06</span>
+        </div>
+        <div class="person-card__content">
+          <small>益阳新力量 · 06</small>
+          <h3>杨志轩</h3>
+          <p class="person-card__intro">大家好，我是杨志轩，毕业于湖南城市学院。性格稳重踏实，注重团队协作；平时喜欢游泳和羽毛球。期待在新的岗位上认真学习、尽快熟悉业务，和大家一起进步。</p>
+          <small class="person-card__future-label">写给一年后的自己</small>
+          <blockquote>"希望未来的我能够尽快熟悉业务、融入团队，认真学习、踏实工作，努力成长为一名合格的中行员工！"</blockquote>
+          <span class="person-card__action">点击了解 <b aria-hidden="true">→</b></span>
+        </div>
+      </button>
+      <button type="button" class="person-card person-card--gold" data-person-index="6" aria-label="查看陈胜寒的完整介绍">
+        <div class="person-card__visual">
+          <img class="person-card__image" src="assets/people/chen-shenghan.webp" alt="陈胜寒人物照片" style="object-position:50% 30%">
+          <span class="person-card__number">07</span>
+        </div>
+        <div class="person-card__content">
+          <small>益阳新力量 · 07</small>
+          <h3>陈胜寒</h3>
+          <p class="person-card__intro">大家好，我是陈胜寒，本科毕业于广西财经学院市场营销专业，MBTI 是 INFJ。平时喜欢运动和唱歌，性格乐观向上，也期待在新的岗位上持续学习、不断进步。</p>
+          <small class="person-card__future-label">写给一年后的自己</small>
+          <blockquote>"期待一年后的你，已经成长为网点里能够独当一面的业务能手。Keep striving upward！"</blockquote>
+          <span class="person-card__action">点击了解 <b aria-hidden="true">→</b></span>
+        </div>
+      </button>
+      <button type="button" class="person-card person-card--green" data-person-index="7" aria-label="查看陶谌的完整介绍">
+        <div class="person-card__visual">
+          <img class="person-card__image" src="assets/people/tao-chen.webp" alt="陶谌人物照片" style="object-position:50% 30%">
+          <span class="person-card__number">08</span>
+        </div>
+        <div class="person-card__content">
+          <small>益阳新力量 · 08</small>
+          <h3>陶谌</h3>
+          <p class="person-card__intro">大家好，我是陶谌，来自益阳安化。业余喜欢听歌、打台球、逛街与阅读。今后希望多向各位前辈和同事学习交流、共同成长；在岗位上，我会脚踏实地、久久为功，认真做好每一项工作。</p>
+          <small class="person-card__future-label">写给一年后的自己</small>
+          <blockquote>"愿明年此刻的你，早已褪去新人的青涩，能够熟练、从容地应对各项业务；始终守住合规底线，保持谦逊好学的初心。不惧难题，善于沉淀，持续精进专业能力，成为更可靠的金融从业者。"</blockquote>
+          <span class="person-card__action">点击了解 <b aria-hidden="true">→</b></span>
+        </div>
+      </button>
+      <button type="button" class="person-card person-card--red" data-person-index="8" aria-label="查看龚梦辉的完整介绍">
+        <div class="person-card__visual">
+          <img class="person-card__image" src="assets/people/gong-menghui.webp" alt="龚梦辉人物照片" style="object-position:50% 20%">
+          <span class="person-card__number">09</span>
+        </div>
+        <div class="person-card__content">
+          <small>益阳新力量 · 09</small>
+          <h3>龚梦辉</h3>
+          <p class="person-card__intro">大家好，我是龚梦辉。平时喜欢看剧、阅读，也热爱旅行，去感受祖国的大好河山。期待在新的环境中与大家相互学习、共同成长。</p>
+          <small class="person-card__future-label">写给一年后的自己</small>
+          <blockquote>"未来，希望自己能够见贤思齐，多自省，多成长。"</blockquote>
+          <span class="person-card__action">点击了解 <b aria-hidden="true">→</b></span>
+        </div>
+      </button></div>
+  </section>
+
+  <section class="youth section" id="youth">
+    <div class="section-kicker"><span>03</span><p>YOUTH LEAGUE / 团青同行</p></div>
+    <div class="youth__title"><p>团聚青年 · 服务青年 · 引领青年</p><h2>你的"新手村"，<br>也是<span>青春共同体</span></h2></div>
+    <div class="ribbon-banner"><div class="ribbon-banner__flag star-text" aria-hidden="true">★</div><div><small>中国银行益阳分行团委</small><strong>青年有方向，成长有伙伴，奋斗有舞台</strong></div></div>
+    <div class="youth-grid">
+      <article class="youth-card"><div class="youth-card__top"><span>01</span><i></i><small>思想引领</small></div><h3>青春心向党</h3><p>把入职第一课变成理想信念第一课，在金融为民的坐标里找到青春方向。</p></article>
+      <article class="youth-card"><div class="youth-card__top"><span>02</span><i></i><small>成长成才</small></div><h3>青年成长营</h3><p>团课、导师结对、岗位练兵、青年分享，让每一次请教都有回应，每一步成长都有同伴。</p></article>
+      <article class="youth-card"><div class="youth-card__top"><span>03</span><i></i><small>志愿服务</small></div><h3>志愿益起来</h3><p>金融知识进社区、参与雷锋志愿服务，把专业能力写在服务群众的一线。</p></article>
+    </div>
+    <div class="youth-pledge"><span class="youth-pledge__spark star-text" aria-hidden="true">★</span><small>MY YOUTH PLEDGE</small><p>我愿把青春写在岗位上，把专业用在需要处，把温度留在每一次服务里。</p><button type="button" id="pledge-button">点亮我的青春宣言</button></div>
+  </section>
+
+  <section class="timeline section section--mist" id="first-month">
+    <div class="section-kicker"><span>04</span><p>GROWTH MAP / 成长地图</p></div>
+    <div class="timeline__title"><h2>从第一天，<br>到<span>独当一面</span></h2><p>让抽象的"快速成长"变成四个看得见、够得着的节点。</p></div>
+    <div class="milestones">
+      <article class="milestone"><div class="milestone__axis"><span>01</span><i></i></div><div><small>DAY 01</small><h3>认路，也认家</h3><p>认识团队、熟悉网点、了解企业文化与团组织，让第一天的紧张被一声"欢迎"轻轻接住。</p></div></article>
+      <article class="milestone"><div class="milestone__axis"><span>02</span><i></i></div><div><small>DAY 07</small><h3>把规范练成习惯</h3><p>从晨会、服务礼仪到业务流程与风险底线，先把每一个小动作做稳、做准。</p></div></article>
+      <article class="milestone"><div class="milestone__axis"><span>03</span><i></i></div><div><small>DAY 30</small><h3>第一次独立发光</h3><p>完成一次服务、一次分享、一次复盘，在真实岗位里看见自己的专业价值。</p></div></article>
+      <article class="milestone"><div class="milestone__axis"><span>04</span><i></i></div><div><small>DAY 100</small><h3>写下成长答案</h3><p>与导师回望百日旅程，留下阶段成果，也为下一程定一个清晰、够得着的目标。</p></div></article>
+    </div>
+  </section>
+
+  <section class="finale"><div class="finale__rings" aria-hidden="true"></div><p>THE STORY HAS JUST BEGUN</p><h2>长卷新开<br><span>"益"起向未来</span></h2><div class="finale__copy"><p>从今天起，你们是中行益阳的新变量——在柜台前传递服务温度，在城市里回应民生所需，在青春赛道上跑出属于这一代金融青年的加速度。</p><strong>中国银行益阳分行，欢迎你！</strong></div><div class="finale__signature"><span><b>来源</b>中国银行益阳分行团委</span><span><b>编辑</b>曾子刚、陈胜寒</span><span><b>审核</b>团委书记 刘娟</span></div><div class="finale__end">END · 2026</div></section>
+
+  <div class="person-modal" id="person-modal" role="dialog" aria-modal="true" aria-labelledby="person-modal-title" hidden>
+    <article class="person-modal__panel" id="person-modal-panel">
+      <button type="button" class="person-modal__close" id="person-modal-close" aria-label="关闭人物介绍">×</button>
+      <div class="person-modal__visual"><img class="person-card__image" id="person-modal-image" src="assets/people/dan-jingyi.webp" alt="但敬易人物照片" style="object-position:50% 30%"></div>
+      <div class="person-modal__copy"><small id="person-modal-eyebrow"></small><h2 id="person-modal-title"></h2><p class="person-modal__role">中国银行益阳分行 · 2026 届新员工</p><section class="person-modal__section"><small>ABOUT ME / 自我介绍</small><p class="person-modal__intro" id="person-modal-intro"></p></section><section class="person-modal__future"><small>TO MY FUTURE SELF / 写给一年后的自己</small><blockquote id="person-modal-future"></blockquote></section><div class="person-modal__tags" id="person-modal-tags"></div></div>
+    </article>
+  </div>
+</main>
+<script>
+const people=[{"id":"dan-jingyi","name":"但敬易","initials":"DJ","eyebrow":"益阳新力量 · 01","intro":"大家好，我是但敬易。平时喜欢唱歌，也热爱乒乓球。很期待在接下来的日子里，与各位同事并肩学习、共同进步，一起在中行的舞台上成长、发光！","future":"一年后的你，应该已经能更加从容地处理各项业务了吧。愿你继续保持积极的人生态度，认真工作，也好好珍惜身边的人。加油！","tags":["唱歌","乒乓球","共同成长"],"image":"assets/people/dan-jingyi.webp","imagePosition":"50% 30%","palette":"red"},{"id":"zhou-yao","name":"周瑶","initials":"ZY","eyebrow":"益阳新力量 · 02","intro":"大家好，我是周瑶。平时喜欢打羽毛球、听歌和看演唱会。很荣幸能够加入中国银行益阳分行这个大家庭，期待未来与大家共同成长、并肩作战！","future":"希望一年后的每个清晨，你穿上工装时仍有仪式感。算得清庞大的流水，也守得住内心的平衡。","tags":["羽毛球","音乐","并肩作战"],"image":"assets/people/zhou-yao.webp","imagePosition":"50% 20%","palette":"blue"},{"id":"zhou-yunchao","name":"周筠潮","initials":"ZY","eyebrow":"益阳新力量 · 03","intro":"大家好，我是周筠潮，性格乐观开朗，平时喜欢打球。期待在工作中向各位前辈多多学习，与大家一起交流、共同进步！","future":"不必焦虑完美，但求持续进步；守好本心，平安顺遂，万事可期。","tags":["乐观开朗","运动","持续进步"],"image":"assets/people/zhou-yunchao.webp","imagePosition":"50% 35%","palette":"gold"},{"id":"chang-shiyi","name":"昌诗熠","initials":"CS","eyebrow":"益阳新力量 · 04","intro":"大家好，我是昌诗熠。做事稳重有耐心，具备良好的沟通能力与团队协作意识。面对工作，我会认真负责，善于梳理问题、高效完成目标；业余时间也注重持续学习，不断提升自己。","future":"希望一年后的自己更加自洽，在工作中也更加从容、得心应手。","tags":["稳重耐心","沟通协作","持续学习"],"image":"assets/people/chang-shiyi.webp","imagePosition":"50% 30%","palette":"green"},{"id":"zeng-zigang","name":"曾子刚","initials":"ZZ","eyebrow":"益阳新力量 · 05","intro":"大家好，我是曾子刚，毕业于金融学专业，具备扎实的金融理论基础，也熟悉银行业务流程。工作之余，我长期保持运动习惯，尤其热爱竞技体育。我相信，金融市场如同赛场，既需要专业的风控定力，也需要持续拼搏的韧劲，期待与大家携手并进。","future":"养天地正气，法古今完人。","tags":["金融专业","竞技体育","风控定力"],"image":"assets/people/zeng-zigang.webp","imagePosition":"50% 30%","palette":"red"},{"id":"yang-zhixuan","name":"杨志轩","initials":"YZ","eyebrow":"益阳新力量 · 06","intro":"大家好，我是杨志轩，毕业于湖南城市学院。性格稳重踏实，注重团队协作；平时喜欢游泳和羽毛球。期待在新的岗位上认真学习、尽快熟悉业务，和大家一起进步。","future":"希望未来的我能够尽快熟悉业务、融入团队，认真学习、踏实工作，努力成长为一名合格的中行员工！","tags":["稳重踏实","游泳","羽毛球"],"image":"assets/people/yang-zhixuan.webp","imagePosition":"50% 25%","palette":"blue"},{"id":"chen-shenghan","name":"陈胜寒","initials":"CS","eyebrow":"益阳新力量 · 07","intro":"大家好，我是陈胜寒，本科毕业于广西财经学院市场营销专业，MBTI 是 INFJ。平时喜欢运动和唱歌，性格乐观向上，也期待在新的岗位上持续学习、不断进步。","future":"期待一年后的你，已经成长为网点里能够独当一面的业务能手。Keep striving upward！","tags":["市场营销","运动","唱歌"],"image":"assets/people/chen-shenghan.webp","imagePosition":"50% 30%","palette":"gold"},{"id":"tao-chen","name":"陶谌","initials":"TC","eyebrow":"益阳新力量 · 08","intro":"大家好，我是陶谌，来自益阳安化。业余喜欢听歌、打台球、逛街与阅读。今后希望多向各位前辈和同事学习交流、共同成长；在岗位上，我会脚踏实地、久久为功，认真做好每一项工作。","future":"愿明年此刻的你，早已褪去新人的青涩，能够熟练、从容地应对各项业务；始终守住合规底线，保持谦逊好学的初心。不惧难题，善于沉淀，持续精进专业能力，成为更可靠的金融从业者。","tags":["益阳安化","阅读","久久为功"],"image":"assets/people/tao-chen.webp","imagePosition":"50% 30%","palette":"green"},{"id":"gong-menghui","name":"龚梦辉","initials":"GM","eyebrow":"益阳新力量 · 09","intro":"大家好，我是龚梦辉。平时喜欢看剧、阅读，也热爱旅行，去感受祖国的大好河山。期待在新的环境中与大家相互学习、共同成长。","future":"未来，希望自己能够见贤思齐，多自省，多成长。","tags":["阅读","旅行","自省成长"],"image":"assets/people/gong-menghui.webp","imagePosition":"50% 20%","palette":"red"}];
+const modal=document.getElementById('person-modal');const panel=document.getElementById('person-modal-panel');const modalImage=document.getElementById('person-modal-image');const modalTitle=document.getElementById('person-modal-title');const modalEyebrow=document.getElementById('person-modal-eyebrow');const modalIntro=document.getElementById('person-modal-intro');const modalFuture=document.getElementById('person-modal-future');const modalTags=document.getElementById('person-modal-tags');
+function closeModal(){modal.hidden=true;document.body.classList.remove('modal-open')}
+document.querySelectorAll('[data-person-index]').forEach(button=>button.addEventListener('click',()=>{const person=people[Number(button.dataset.personIndex)];panel.className='person-modal__panel person-modal__panel--'+person.palette;modalImage.src=person.image;modalImage.alt=person.name+'人物照片';modalImage.style.objectPosition=person.imagePosition;modalEyebrow.textContent=person.eyebrow;modalTitle.textContent=person.name;modalIntro.textContent=person.intro;modalFuture.textContent='\u201C'+person.future+'\u201D';modalTags.replaceChildren(...person.tags.map(tag=>{const span=document.createElement('span');span.textContent='#'+tag;return span}));modal.hidden=false;document.body.classList.add('modal-open')}));
+document.getElementById('person-modal-close').addEventListener('click',closeModal);modal.addEventListener('mousedown',event=>{if(event.target===modal)closeModal()});window.addEventListener('keydown',event=>{if(event.key==='Escape'&&!modal.hidden)closeModal()});
+document.querySelectorAll('[data-scroll]').forEach(button=>button.addEventListener('click',()=>document.getElementById(button.dataset.scroll)?.scrollIntoView({behavior:'smooth',block:'start'})));
+const railButtons=[...document.querySelectorAll('.chapter-rail [data-scroll]')];const observer=new IntersectionObserver(entries=>{const visible=entries.filter(entry=>entry.isIntersecting).sort((a,b)=>b.intersectionRatio-a.intersectionRatio)[0];if(visible){railButtons.forEach(button=>button.classList.toggle('is-active',button.dataset.scroll===visible.target.id))}},{threshold:[.2,.45,.7]});['letter','faces','youth','first-month'].forEach(id=>{const section=document.getElementById(id);if(section)observer.observe(section)});
+const pledge=document.getElementById('pledge-button');pledge.addEventListener('click',()=>{pledge.textContent='已点亮 · 青春宣言';pledge.classList.add('is-saved');try{localStorage.setItem('yiyang-youth-pledge','saved')}catch{}});try{if(localStorage.getItem('yiyang-youth-pledge')==='saved'){pledge.textContent='已点亮 · 青春宣言';pledge.classList.add('is-saved')}}catch{}
+</script>
+</body></html>
